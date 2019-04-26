@@ -12,8 +12,8 @@ def durations(origin, destination):
     #print('终点:%s'%destination)
 
     # 高德地图API
-    url_l1 = 'https://restapi.amap.com/v3/geocode/geo?key=aac34b1f1b55d05e9450df099053d9f0&output=JSON&address=%s&city=北京'%origin
-    url_l2 = 'https://restapi.amap.com/v3/geocode/geo?key=aac34b1f1b55d05e9450df099053d9f0&output=JSON&address=%s&city=北京'%destination
+    url_l1 = 'https://restapi.amap.com/v3/geocode/geo?key=<你的key>0&output=JSON&address=%s&city=北京'%origin
+    url_l2 = 'https://restapi.amap.com/v3/geocode/geo?key=<你的key>&output=JSON&address=%s&city=北京'%destination
 
     resp_l1 = requests.get(url_l1)
     resp_l2 = requests.get(url_l2)
@@ -36,7 +36,7 @@ def durations(origin, destination):
     #https://restapi.amap.com/v3/direction/transit/integrated?origin=116.481499,39.990475&destination=116.465063,39.999538&city=010&output=xml&key=<用户的key>
 
     #json
-    url_com_json = 'https://restapi.amap.com/v3/direction/transit/integrated?origin=%s&destination=%s&city=北京&strategy=0&output=json&key=aac34b1f1b55d05e9450df099053d9f0'%(location1, location2)
+    url_com_json = 'https://restapi.amap.com/v3/direction/transit/integrated?origin=%s&destination=%s&city=北京&strategy=0&output=json&key=<你的key>'%(location1, location2)
     #print(url_com_json)
 
     resp_com = requests.get(url_com_json)
