@@ -22,5 +22,6 @@
 
 PS:边学边随手写的小代码.慢慢增加功能
 
-样例:
-./test.png
+### 样例:
+
+![](https://github.com/yabuzhidao/zufang/blob/master/test.png)
